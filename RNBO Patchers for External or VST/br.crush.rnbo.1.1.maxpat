@@ -15,7 +15,7 @@
             780.0,
             680.0
         ],
-        "description": "br.crush.rnbo.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "br.crush.rnbo.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -30,7 +30,7 @@
                         520.0,
                         33.0
                     ],
-                    "text": "br.crush.rnbo.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "br.crush.rnbo.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -1200,11 +1200,11 @@
                                     "numoutlets": 0,
                                     "patching_rect": [
                                         42.0,
-                                        270.0,
+                                        396.0,
                                         560.0,
                                         47.0
                                     ],
-                                    "text": "gen~ code MUST MATCH br.crush.1.0 (open both: same codebox). The six params are the plugin parameters (VST/AU, web, external). Each inlet sets its param; attrui in the parent shows them all."
+                                    "text": "gen~ code MUST MATCH br.crush.1.1 (open both: same codebox). The six params are the plugin parameters (VST/AU, web, external). Each inlet sets its param; attrui in the parent shows them all."
                                 }
                             },
                             {
@@ -1500,6 +1500,231 @@
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "On_Off"
                                 }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st10",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        455.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st20",
+                                    "maxclass": "newobj",
+                                    "text": "outport rate",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        455.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st11",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        565.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st21",
+                                    "maxclass": "newobj",
+                                    "text": "outport bits",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        565.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st12",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        675.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st22",
+                                    "maxclass": "newobj",
+                                    "text": "outport autogain",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        675.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st13",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        785.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st23",
+                                    "maxclass": "newobj",
+                                    "text": "outport lowpass",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        785.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st14",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        895.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st24",
+                                    "maxclass": "newobj",
+                                    "text": "outport drywet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        895.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st15",
+                                    "maxclass": "newobj",
+                                    "text": "change",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "patching_rect": [
+                                        1005.0,
+                                        275.0,
+                                        50.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st25",
+                                    "maxclass": "newobj",
+                                    "text": "outport on",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [
+                                        1005.0,
+                                        310.0,
+                                        90.0,
+                                        23.0
+                                    ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-st3",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "text": "State: each outport sends rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1 out of the rnbo~ rightmost outlet the moment it changes. Same as the State outlet of the abstractions.",
+                                    "patching_rect": [
+                                        42.0,
+                                        348.0,
+                                        520.0,
+                                        33.0
+                                    ]
+                                }
                             }
                         ],
                         "lines": [
@@ -1694,6 +1919,150 @@
                                         7
                                     ]
                                 }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pRate",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st10",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st10",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st20",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pBits",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st11",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st11",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st21",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pAuto_gain",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st12",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st12",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st22",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pLow_pass",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st13",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st13",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st23",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pDry_Wet",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st14",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st14",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st24",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "pOn_Off",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st15",
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "source": [
+                                        "obj-st15",
+                                        0
+                                    ],
+                                    "destination": [
+                                        "obj-st25",
+                                        0
+                                    ]
+                                }
                             }
                         ]
                     },
@@ -1768,7 +2137,7 @@
                         340.0,
                         100.0
                     ],
-                    "text": "EXPORT NAME: br.crush.1.0~\nMax External Export asks for a name: keep the ~ at the end. Without it the external has the same name as the abstraction br.crush.1.0, and Max loads whichever it finds first. Audio Plugin Export (VST3/AU): any name; the Rate, Bits, Auto_gain, Low_pass, Dry_Wet and On_Off params appear in your DAW."
+                    "text": "EXPORT NAME: br.crush.1.1~\nMax External Export asks for a name: keep the ~ at the end. Without it the external has the same name as the abstraction br.crush.1.1, and Max loads whichever it finds first. Audio Plugin Export (VST3/AU): any name; the Rate, Bits, Auto_gain, Low_pass, Dry_Wet and On_Off params appear in your DAW."
                 }
             },
             {
@@ -1893,6 +2262,159 @@
                         232.0,
                         210.0,
                         180.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st4",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "text": "rnbo~ rightmost outlet = State: rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1 (from the outports inside).",
+                    "patching_rect": [
+                        420,
+                        372,
+                        443.0,
+                        20.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st5",
+                    "maxclass": "newobj",
+                    "text": "route rate bits autogain lowpass drywet on",
+                    "numinlets": 2,
+                    "numoutlets": 7,
+                    "outlettype": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "patching_rect": [
+                        420,
+                        520,
+                        310.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st60",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        420,
+                        555,
+                        50.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st61",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        475,
+                        555,
+                        50.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st62",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        530,
+                        555,
+                        50.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st63",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        585,
+                        555,
+                        50.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st64",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        640,
+                        555,
+                        50.0,
+                        22.0
+                    ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-st65",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [
+                        "",
+                        "bang"
+                    ],
+                    "parameter_enable": 0,
+                    "patching_rect": [
+                        695,
+                        555,
+                        50.0,
                         22.0
                     ]
                 }
@@ -2039,6 +2561,90 @@
                     ],
                     "destination": [
                         "obj-7",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-7",
+                        2
+                    ],
+                    "destination": [
+                        "obj-st5",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        0
+                    ],
+                    "destination": [
+                        "obj-st60",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        1
+                    ],
+                    "destination": [
+                        "obj-st61",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        2
+                    ],
+                    "destination": [
+                        "obj-st62",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        3
+                    ],
+                    "destination": [
+                        "obj-st63",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        4
+                    ],
+                    "destination": [
+                        "obj-st64",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-st5",
+                        5
+                    ],
+                    "destination": [
+                        "obj-st65",
                         0
                     ]
                 }

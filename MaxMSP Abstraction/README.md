@@ -1,11 +1,11 @@
-# Max/MSP Abstraction: br.crush.1.0  
+# Max/MSP Abstraction: br.crush.1.1  
    
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.crush.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
+Repository for br.crush.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
@@ -16,7 +16,8 @@ These files were created with Max 9.
 [Which file?](#Files)  
 [What is an abstraction?](#Abstraction)  
 [How To Install](#Install)  
-[How To Use](#Use) 
+[How To Use](#Use)  
+[State outlet](#State)  
 
 ## <a name="About"></a>About
 
@@ -38,9 +39,9 @@ Bit + sample-rate reduction, stereo. Rate holds each sample until the next one i
 
 | File | What it is |
 |---|---|
-| br.crush.1.0 | No UI. The plain object to patch with |
-| br.crush.ui.1.0 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
-| _br.crush.example.1.0 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
+| br.crush.1.1 | No UI. The plain object to patch with |
+| br.crush.ui.1.1 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
+| _br.crush.example.1.1 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
 
 The UI version contains the plain version and has the same inlets and outlets, so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
 
@@ -54,9 +55,9 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 1. Make sure you have Max 9 installed, and that the Max patch you are using is saved inside a folder.  
 
-2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.crush.ui.1.0 uses br.crush.1.0).
+2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.crush.ui.1.1 uses br.crush.1.1).
 
-3. In your patch, create an object called br.crush.1.0. For the version with controls, create a [bpatcher] and choose br.crush.ui.1.0.maxpat as its patcher.
+3. In your patch, create an object called br.crush.1.1. For the version with controls, create a [bpatcher] and choose br.crush.ui.1.1.maxpat as its patcher.
 
 ## <a name="Use"></a>How To Use
 
@@ -71,10 +72,26 @@ By saving your logic in an abstraction, you can create modules that can be used 
 | 7 | Dry/Wet | Signal or Float (UI: Float only) | % 0 to 100 | 100 |
 | 8 | On/Off | Signal or Int (UI: Int only) | 0 off, 1 on | 1 |
 
-Outlets 1 / 2: Left Out / Right Out (Signal)
+Outlets 1 / 2: Left Out / Right Out (Signal)  
+Outlet 3: State (Message), see [State outlet](#State)
 
 Every control fades, so you can change anything while audio plays, and every control also takes a signal or a number (the example patch sweeps Bits with a slow sine). In the UI version a number into an inlet moves its control, so the screen always shows what you hear. Hover any inlet or outlet in Max for its description.
 
 Rate runs a phase counter at the Rate frequency: each time it wraps, a new input sample is taken and held until the next wrap. Bits rounds the held sample to 2^(Bits-1) levels each side of zero, half a step off zero; a fractional Bits value crossfades the two neighbouring depths. Auto-gain is a plain gain cut of 3 dB per bit below 8, worked out from whichever is lower, the Bits you asked for or the Bits the crush is at right now: it cuts in over 5 ms while Bits glides over 20 ms, and lets go over 40 ms. A 12 dB/oct state-variable low-pass follows, then a gentle 5 Hz DC blocker on the crushed signal only (a constant offset coming in would otherwise be rounded up to a half step), then the linear dry/wet and the On/Off fade. Exact silence stays silent: the rounding works on the size of each sample and puts the sign back.
+
+## <a name="State"></a>State outlet
+
+The last outlet of every abstraction (State) sends the current settings as named messages the moment they change: `rate 8000.`, `bits 6.`, `autogain 1`, `lowpass 20000.`, `drywet 100.` and `on 1`. Use it to keep a display, Mira or another patch in sync. Pick them out by name with [route rate bits autogain lowpass drywet on], not by position, so your patch keeps working if a later version adds controls. Repeats are filtered out.
+
+| Message | Type | Range |
+|---|---|---|
+| rate | Float | Hz, 50 to 48000 |
+| bits | Float | 1 to 24 (UI: 1 to 16) |
+| autogain | Int | 0 off, 1 on |
+| lowpass | Float | Hz, 200 to 20000 |
+| drywet | Float | %, 0 to 100 |
+| on | Int | 0 off, 1 on |
+
+Only numbers are reported: if a signal drives an inlet of the plain version, nothing comes out of State. The example patch has a State outlet tab that shows this, and the RNBO patch shows the same [route rate bits autogain lowpass drywet on].
 
 Double-click the object to see inside it and study how it was built.

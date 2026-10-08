@@ -18,7 +18,7 @@
         "openrectmode": 0,
         "openinpresentation": 1,
         "devicewidth": 132.0,
-        "description": "br.crush.ui.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "br.crush.ui.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -461,10 +461,11 @@
                     "id": "obj-core",
                     "maxclass": "newobj",
                     "numinlets": 8,
-                    "numoutlets": 2,
+                    "numoutlets": 3,
                     "outlettype": [
                         "signal",
-                        "signal"
+                        "signal",
+                        ""
                     ],
                     "patching_rect": [
                         15.0,
@@ -472,7 +473,7 @@
                         555.0,
                         22.0
                     ],
-                    "text": "br.crush.1.0"
+                    "text": "br.crush.1.1"
                 }
             },
             {
@@ -522,7 +523,7 @@
                         440.0,
                         33.0
                     ],
-                    "text": "br.crush.ui.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "br.crush.ui.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -558,7 +559,7 @@
                         420.0,
                         47.0
                     ],
-                    "text": "[br.crush.1.0] is the real object: open it to see the gen~ inside. This file only adds the controls, so you can also patch the core directly and drive any control with a signal."
+                    "text": "[br.crush.1.1] is the real object: open it to see the gen~ inside. This file only adds the controls, so you can also patch the core directly and drive any control with a signal."
                 }
             },
             {
@@ -582,7 +583,7 @@
             {
                 "box": {
                     "angle": 270.0,
-                    "annotation": "br.crush.ui.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+                    "annotation": "br.crush.ui.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
                     "background": 1,
                     "bgcolor": [
                         0.0,
@@ -590,7 +591,7 @@
                         0.0,
                         1.0
                     ],
-                    "hint": "br.crush.ui.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+                    "hint": "br.crush.ui.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
                     "id": "obj-panel",
                     "maxclass": "panel",
                     "mode": 0,
@@ -611,6 +612,40 @@
                     ],
                     "proportion": 0.5,
                     "rounded": 7
+                }
+            },
+            {
+                "box": {
+                    "maxclass": "outlet",
+                    "id": "obj-1",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "outlettype": [],
+                    "patching_rect": [
+                        135.0,
+                        230.0,
+                        30.0,
+                        30.0
+                    ],
+                    "comment": "State (Message): rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1, sent the moment a control changes. Numbers only (signals are not reported). Pick them out by name: [route rate bits autogain lowpass drywet on]"
+                }
+            },
+            {
+                "box": {
+                    "maxclass": "comment",
+                    "id": "obj-2",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "outlettype": [],
+                    "patching_rect": [
+                        640.0,
+                        389.0,
+                        420.0,
+                        61.0
+                    ],
+                    "text": "The last outlet (State) reports the controls as rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1 the moment they change. It comes from the core, so moving a control, numbers into the inlets and preset recalls all show up. Pick them out by name with [route rate bits autogain lowpass drywet on].",
+                    "fontname": "Arial",
+                    "fontsize": 12.0
                 }
             }
         ],
@@ -803,6 +838,18 @@
                     ],
                     "destination": [
                         "obj-out2",
+                        0
+                    ]
+                }
+            },
+            {
+                "patchline": {
+                    "source": [
+                        "obj-core",
+                        2
+                    ],
+                    "destination": [
+                        "obj-1",
                         0
                     ]
                 }
