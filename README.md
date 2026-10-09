@@ -1,13 +1,13 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.crush.1.1
+## br.crush.1.2
    
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.crush.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
+Repository for br.crush.1.2, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9, or RNBO.
@@ -41,6 +41,12 @@ You can use it as an abstraction within Max/MSP or as a Max for Live device with
 
 Rate runs a phase counter at the Rate frequency: each time it wraps, a new input sample is taken and held until the next wrap. Bits rounds the held sample to 2^(Bits-1) levels each side of zero, half a step off zero; a fractional Bits value crossfades the two neighbouring depths. Auto-gain is a plain gain cut of 3 dB per bit below 8, worked out from whichever is lower, the Bits you asked for or the Bits the crush is at right now: it cuts in over 5 ms while Bits glides over 20 ms, and lets go over 40 ms. A 12 dB/oct state-variable low-pass follows, then a gentle 5 Hz DC blocker on the crushed signal only (a constant offset coming in would otherwise be rounded up to a half step), then the linear dry/wet and the On/Off fade. Exact silence stays silent: the rounding works on the size of each sample and puts the sign back.
 
+## <a name="New12"></a>What's new in 1.2
+
+- The [State outlet](#State) is now on the UI version only (the one with controls). It reports the controls, so moving them, numbers into the inlets and preset recalls all show up, with the same names and the same position as in 1.1.
+- The plain version (no UI) and the RNBO patch no longer have a State outlet: whatever drives it already knows the values. Its outlets are audio only again.
+- The Max for Live device is unchanged apart from the version number.
+
 ## <a name="New"></a>What's new in 1.1
 
 - New [State outlet](#State): every abstraction and the RNBO patch now send `rate 8000.`, `bits 6.`, `autogain 1`, `lowpass 20000.`, `drywet 100.` and `on 1` out of their last outlet the moment a setting changes, so a display, Mira or another patch can follow along.
@@ -50,11 +56,11 @@ Rate runs a phase counter at the Rate frequency: each time it wraps, a new input
 
 | File | What it is |
 |---|---|
-| br.crush.1.1 | No UI. The plain object to patch with |
-| br.crush.ui.1.1 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
-| _br.crush.example.1.1 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
+| br.crush.1.2 | No UI. The plain object to patch with |
+| br.crush.ui.1.2 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
+| _br.crush.example.1.2 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
 
-The UI version contains the plain version and has the same inlets and outlets, so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
+The UI version contains the plain version and has the same inlets and audio outlets (plus State last), so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
 
 ## <a name="Use"></a>How To Use
 
@@ -70,13 +76,13 @@ The UI version contains the plain version and has the same inlets and outlets, s
 | 8 | On/Off | Signal or Int (UI: Int only) | 0 off, 1 on | 1 |
 
 Outlets 1 / 2: Left Out / Right Out (Signal)  
-Outlet 3: State (Message), see [State outlet](#State)
+Outlet 3 (UI version only): State (Message), see [State outlet](#State)
 
 Every control fades, so you can change anything while audio plays, and every control also takes a signal or a number (the example patch sweeps Bits with a slow sine). In the UI version a number into an inlet moves its control, so the screen always shows what you hear. Hover any inlet or outlet in Max for its description.
 
 ## <a name="State"></a>State outlet
 
-The last outlet of every abstraction (State) sends the current settings as named messages the moment they change: `rate 8000.`, `bits 6.`, `autogain 1`, `lowpass 20000.`, `drywet 100.` and `on 1`. Use it to keep a display, Mira or another patch in sync. Pick them out by name with [route rate bits autogain lowpass drywet on], not by position, so your patch keeps working if a later version adds controls. Repeats are filtered out.
+The last outlet of the UI version (State) sends the current settings as named messages the moment they change: `rate 8000.`, `bits 6.`, `autogain 1`, `lowpass 20000.`, `drywet 100.` and `on 1`. Use it to keep a display, Mira or another patch in sync. Pick them out by name with [route rate bits autogain lowpass drywet on], not by position, so your patch keeps working if a later version adds controls. Repeats are filtered out.
 
 | Message | Type | Range |
 |---|---|---|
@@ -87,4 +93,4 @@ The last outlet of every abstraction (State) sends the current settings as named
 | drywet | Float | %, 0 to 100 |
 | on | Int | 0 off, 1 on |
 
-Only numbers are reported: if a signal drives an inlet of the plain version, nothing comes out of State. The example patch has a State outlet tab that shows this, and the RNBO patch shows the same [route rate bits autogain lowpass drywet on].
+The plain version has no State outlet: whatever drives it already knows the values. The example patch has a State outlet tab that shows this.

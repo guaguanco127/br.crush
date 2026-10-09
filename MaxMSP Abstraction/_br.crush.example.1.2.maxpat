@@ -15,7 +15,7 @@
             1480.0,
             630.0
         ],
-        "description": "_br.crush.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "_br.crush.example.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -1761,7 +1761,7 @@
                         463.0,
                         33.0
                     ],
-                    "text": "_br.crush.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "_br.crush.example.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -1814,7 +1814,7 @@
                         736.0,
                         60.0
                     ],
-                    "text": "Two files, same DSP inside:\nbr.crush.1.1 = core, no UI (in: L, R, Rate, Bits, Auto-gain, Low-pass, Dry/Wet, On/Off; out: L, R).\nbr.crush.ui.1.1 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
+                    "text": "Two files, same DSP inside:\nbr.crush.1.2 = core, no UI (in: L, R, Rate, Bits, Auto-gain, Low-pass, Dry/Wet, On/Off; out: L, R).\nbr.crush.ui.1.2 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
                 }
             },
             {
@@ -1918,7 +1918,7 @@
                         145.0,
                         20.0
                     ],
-                    "text": "A: br.crush.ui.1.1"
+                    "text": "A: br.crush.ui.1.2"
                 }
             },
             {
@@ -1932,7 +1932,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "br.crush.ui.1.1.maxpat",
+                    "name": "br.crush.ui.1.2.maxpat",
                     "numinlets": 8,
                     "numoutlets": 3,
                     "offset": [
@@ -1977,7 +1977,7 @@
                     "id": "obj-b",
                     "maxclass": "newobj",
                     "numinlets": 8,
-                    "numoutlets": 3,
+                    "numoutlets": 2,
                     "outlettype": [
                         "signal",
                         "signal",
@@ -1989,7 +1989,7 @@
                         330.0,
                         22.0
                     ],
-                    "text": "br.crush.1.1"
+                    "text": "br.crush.1.2"
                 }
             },
             {
@@ -2335,7 +2335,7 @@
                         560.0,
                         47.0
                     ],
-                    "text": "State outlet: every UI and core has a last outlet that sends rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1 the moment a control changes (numbers only, not signals). Open [p State outlet] (also a tab at the top) to see it read by name with [route rate bits autogain lowpass drywet on].",
+                    "text": "State outlet: each UI has a last outlet that sends rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1 the moment a control changes. The cores have none: whatever drives a core already knows the values. Open [p State outlet] (also a tab at the top) to see it read by name with [route rate bits autogain lowpass drywet on].",
                     "fontname": "Arial",
                     "fontsize": 12.0
                 }
@@ -2434,7 +2434,7 @@
                                         600.0,
                                         47.0
                                     ],
-                                    "text": "Each br.crush UI/core sends its state out of its LAST outlet as named messages: rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1, the moment a control changes. Read them by NAME with [route rate bits autogain lowpass drywet on], never by position: names stay put when a tool gains controls.",
+                                    "text": "Each br.crush UI sends its state out of its LAST outlet as named messages: rate <Hz>, bits, autogain 0/1, lowpass <Hz>, drywet <%> and on 0/1, the moment a control changes. Read them by NAME with [route rate bits autogain lowpass drywet on], never by position: names stay put when a tool gains controls.",
                                     "fontname": "Arial",
                                     "fontsize": 12.0
                                 }
