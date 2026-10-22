@@ -15,7 +15,7 @@
             1060.0,
             360.0
         ],
-        "description": "br.crush.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "br.crush.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -552,7 +552,7 @@
                         555.0,
                         22.0
                     ],
-                    "text": "gen~ @title br.crush.1.2"
+                    "text": "gen~ @title br.crush.1.3"
                 }
             },
             {
@@ -602,7 +602,7 @@
                         399.0,
                         33.0
                     ],
-                    "text": "br.crush.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "br.crush.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {

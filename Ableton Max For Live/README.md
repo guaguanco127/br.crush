@@ -1,11 +1,11 @@
-# Ableton Max for Live device: br.crush.1.2  
+# Ableton Max for Live device: br.crush.1.3  
    
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.crush.1.2, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
+Repository for br.crush.1.3, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
@@ -13,6 +13,7 @@ These files were created with Max 9.
 ## Table of Contents 
 
 [About](#About)  
+[What's new in 1.3](#New13)  
 [What is a Max for Live Device?](#M4L)  
 [How To Install](#Install)  
 
@@ -34,6 +35,10 @@ A compact stereo audio effect with six controls, all Live parameters, so you can
 
 **On/Off:** Off fades to the dry signal at full level. Default on.  
 
+## <a name="New13"></a>What's new in 1.3
+
+- **Readable dials in the Max for Live device:** the dials' values and needles are now white, so they stand out on the black panel (with Live's default theme they were dark and hard to read). The abstraction, RNBO patch and sound are unchanged; every file now has the version 1.3.
+
 ## <a name="M4L"></a>What Is a Max For Live Device?
 
 Max For Live brings the power and flexibility of Max to Ableton Live. Max For Live gives you access to hundreds of exclusive custom plug-ins (Live Devices) as well as the tools to build your own. These can be MIDI and audio effects, audio and video synthesizers, 3D Jitter visuals, as well as tools that interact with the Live application itself, via the Live API.
@@ -45,7 +50,7 @@ Max For Live brings the power and flexibility of Max to Ableton Live. Max For Li
 2. For Mac:  
 Go to your user folder  
 Then Music > Ableton > User Library > Presets > Audio Effects > Max Audio Effect  
-Copy br.crush.1.2.amxd into that folder
+Copy br.crush.1.3.amxd into that folder
 
 3. For Windows: \Users\[username]\Documents\Ableton\User Library\Presets\Audio Effects\Max Audio Effect  
   

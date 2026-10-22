@@ -15,7 +15,7 @@
             780.0,
             680.0
         ],
-        "description": "br.crush.rnbo.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "br.crush.rnbo.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -30,7 +30,7 @@
                         520.0,
                         33.0
                     ],
-                    "text": "br.crush.rnbo.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "br.crush.rnbo.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -1204,7 +1204,7 @@
                                         560.0,
                                         47.0
                                     ],
-                                    "text": "gen~ code MUST MATCH br.crush.1.2 (open both: same codebox). The six params are the plugin parameters (VST/AU, web, external). Each inlet sets its param; attrui in the parent shows them all."
+                                    "text": "gen~ code MUST MATCH br.crush.1.3 (open both: same codebox). The six params are the plugin parameters (VST/AU, web, external). Each inlet sets its param; attrui in the parent shows them all."
                                 }
                             },
                             {
@@ -1768,7 +1768,7 @@
                         340.0,
                         100.0
                     ],
-                    "text": "EXPORT NAME: br.crush.1.2~\nMax External Export asks for a name: keep the ~ at the end. Without it the external has the same name as the abstraction br.crush.1.2, and Max loads whichever it finds first. Audio Plugin Export (VST3/AU): any name; the Rate, Bits, Auto_gain, Low_pass, Dry_Wet and On_Off params appear in your DAW."
+                    "text": "EXPORT NAME: br.crush.1.3~\nMax External Export asks for a name: keep the ~ at the end. Without it the external has the same name as the abstraction br.crush.1.3, and Max loads whichever it finds first. Audio Plugin Export (VST3/AU): any name; the Rate, Bits, Auto_gain, Low_pass, Dry_Wet and On_Off params appear in your DAW."
                 }
             },
             {

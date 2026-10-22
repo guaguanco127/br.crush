@@ -18,7 +18,7 @@
         "openrectmode": 0,
         "openinpresentation": 1,
         "devicewidth": 132.0,
-        "description": "br.crush.ui.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "br.crush.ui.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -473,7 +473,7 @@
                         150.0,
                         22.0
                     ],
-                    "text": "br.crush.1.2"
+                    "text": "br.crush.1.3"
                 }
             },
             {
@@ -523,7 +523,7 @@
                         440.0,
                         33.0
                     ],
-                    "text": "br.crush.ui.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "br.crush.ui.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -559,7 +559,7 @@
                         420.0,
                         47.0
                     ],
-                    "text": "[br.crush.1.2] is the real object: open it to see the gen~ inside. This file only adds the controls, so you can also patch the core directly and drive any control with a signal."
+                    "text": "[br.crush.1.3] is the real object: open it to see the gen~ inside. This file only adds the controls, so you can also patch the core directly and drive any control with a signal."
                 }
             },
             {
@@ -583,7 +583,7 @@
             {
                 "box": {
                     "angle": 270.0,
-                    "annotation": "br.crush.ui.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+                    "annotation": "br.crush.ui.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
                     "background": 1,
                     "bgcolor": [
                         0.0,
@@ -591,7 +591,7 @@
                         0.0,
                         1.0
                     ],
-                    "hint": "br.crush.ui.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+                    "hint": "br.crush.ui.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
                     "id": "obj-panel",
                     "maxclass": "panel",
                     "mode": 0,

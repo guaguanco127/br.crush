@@ -15,7 +15,7 @@
             1480.0,
             630.0
         ],
-        "description": "_br.crush.example.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
+        "description": "_br.crush.example.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
@@ -1761,7 +1761,7 @@
                         463.0,
                         33.0
                     ],
-                    "text": "_br.crush.example.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
+                    "text": "_br.crush.example.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
             {
@@ -1814,7 +1814,7 @@
                         736.0,
                         60.0
                     ],
-                    "text": "Two files, same DSP inside:\nbr.crush.1.2 = core, no UI (in: L, R, Rate, Bits, Auto-gain, Low-pass, Dry/Wet, On/Off; out: L, R).\nbr.crush.ui.1.2 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
+                    "text": "Two files, same DSP inside:\nbr.crush.1.3 = core, no UI (in: L, R, Rate, Bits, Auto-gain, Low-pass, Dry/Wet, On/Off; out: L, R).\nbr.crush.ui.1.3 = the same core with dials, for a bpatcher (Patching > Bpatcher, or drag the file in).\nBoth need to be in your Max search path (same folder as your patch is easiest)."
                 }
             },
             {
@@ -1918,7 +1918,7 @@
                         145.0,
                         20.0
                     ],
-                    "text": "A: br.crush.ui.1.2"
+                    "text": "A: br.crush.ui.1.3"
                 }
             },
             {
@@ -1932,7 +1932,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "br.crush.ui.1.2.maxpat",
+                    "name": "br.crush.ui.1.3.maxpat",
                     "numinlets": 8,
                     "numoutlets": 3,
                     "offset": [
@@ -1989,7 +1989,7 @@
                         330.0,
                         22.0
                     ],
-                    "text": "br.crush.1.2"
+                    "text": "br.crush.1.3"
                 }
             },
             {

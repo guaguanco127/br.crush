@@ -1,11 +1,11 @@
-# Max/MSP Abstraction: br.crush.1.2  
+# Max/MSP Abstraction: br.crush.1.3  
    
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.crush.1.2, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
+Repository for br.crush.1.3, with all related files, can be found here: [https://github.com/guaguanco127/br.crush](https://github.com/guaguanco127/br.crush)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
@@ -39,9 +39,9 @@ Bit + sample-rate reduction, stereo. Rate holds each sample until the next one i
 
 | File | What it is |
 |---|---|
-| br.crush.1.2 | No UI. The plain object to patch with |
-| br.crush.ui.1.2 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
-| _br.crush.example.1.2 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
+| br.crush.1.3 | No UI. The plain object to patch with |
+| br.crush.ui.1.3 | With a dial for Rate, Bits, Low-pass and Dry/Wet and Auto-gain and On/Off buttons, ready for a [bpatcher] (132 x 169) |
+| _br.crush.example.1.3 | Example patch: open this first. Pick a source (drum loop, voice, synth plucks, a stereo pair or your mic) |
 
 The UI version contains the plain version and has the same inlets and audio outlets (plus State last), so either swaps in without rewiring. Open the UI version in patching mode for comments on how it is built.
 
@@ -55,9 +55,9 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 1. Make sure you have Max 9 installed, and that the Max patch you are using is saved inside a folder.  
 
-2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.crush.ui.1.2 uses br.crush.1.2).
+2. Copy the .maxpat files you want into the same folder as your patch. The UI version needs the plain version next to it (br.crush.ui.1.3 uses br.crush.1.3).
 
-3. In your patch, create an object called br.crush.1.2. For the version with controls, create a [bpatcher] and choose br.crush.ui.1.2.maxpat as its patcher.
+3. In your patch, create an object called br.crush.1.3. For the version with controls, create a [bpatcher] and choose br.crush.ui.1.3.maxpat as its patcher.
 
 ## <a name="Use"></a>How To Use
 
