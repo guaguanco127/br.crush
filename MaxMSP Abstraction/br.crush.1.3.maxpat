@@ -9,164 +9,103 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [
-            85.0,
-            104.0,
-            1060.0,
-            360.0
-        ],
+        "rect": [ 85.0, 104.0, 1060.0, 360.0 ],
         "description": "br.crush.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "boxes": [
             {
                 "box": {
                     "comment": "Left In (Signal)",
                     "id": "obj-1",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        15.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 15.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Right In (Signal)",
                     "id": "obj-2",
-                    "index": 2,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        90.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 90.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Rate (Signal/Float) Hz 50. to 48000. Sample-rate reduction: how often a new sample is taken; in between, the last one is held. Lower = more aliasing and grit. 48000 or more = no rate reduction, at any samplerate. Default 8000",
                     "id": "obj-3",
-                    "index": 3,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        165.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 165.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Bits (Signal/Float) 1. to 24. Bit depth. A float: 4.5 is a blend of 4 and 5 bits, so turning it morphs smoothly instead of stepping. Default 6",
                     "id": "obj-4",
-                    "index": 4,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        240.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 240.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Auto-gain (Signal/Int) 0 off, 1 on: cuts 3 dB for every bit below 8, because each bit removed makes the crush sound louder. Going down the cut lands first, going up it lifts last, so the level never jumps. Default 1",
                     "id": "obj-5",
-                    "index": 5,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        315.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 315.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Low-pass (Signal/Float) Hz 200. to 20000. 12 dB/oct after the crush: smooths the stair-steps and tames the added highs. Default 20000",
                     "id": "obj-6",
-                    "index": 6,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        390.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 390.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Dry/Wet (Signal/Float) % 0. to 100. Linear blend. Default 100",
                     "id": "obj-7",
-                    "index": 7,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        465.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 465.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "On/Off (Signal/Int) 1 on, 0 off. Off fades to the dry signal at full level. Fades over 20 ms. Default 1",
                     "id": "obj-8",
-                    "index": 8,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
-                    "outlettype": [
-                        "signal"
-                    ],
-                    "patching_rect": [
-                        540.0,
-                        15.0,
-                        30.0,
-                        30.0
-                    ]
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 540.0, 15.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -177,10 +116,7 @@
                     "maxclass": "newobj",
                     "numinlets": 8,
                     "numoutlets": 2,
-                    "outlettype": [
-                        "signal",
-                        "signal"
-                    ],
+                    "outlettype": [ "signal", "signal" ],
                     "patcher": {
                         "fileversion": 1,
                         "appversion": {
@@ -191,31 +127,19 @@
                             "modernui": 1
                         },
                         "classnamespace": "dsp.gen",
-                        "rect": [
-                            134.0,
-                            87.0,
-                            1300.0,
-                            1564.0
-                        ],
+                        "rect": [ 134.0, 87.0, 1300.0, 883.0 ],
                         "boxes": [
                             {
                                 "box": {
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-1",
-                                    "linecount": 6,
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        20.0,
-                                        20.0,
-                                        200.0,
-                                        36.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 20.0, 20.0, 177.0, 35.0 ],
                                     "text": "in 1 @comment \"Left In (Signal)\""
                                 }
                             },
@@ -224,19 +148,11 @@
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-2",
-                                    "linecount": 6,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        235.0,
-                                        20.0,
-                                        200.0,
-                                        36.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 214.0, 20.0, 200.0, 22.0 ],
                                     "text": "in 2 @comment \"Right In (Signal)\""
                                 }
                             },
@@ -249,15 +165,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        450.0,
-                                        20.0,
-                                        200.0,
-                                        76.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 450.0, 20.0, 120.0, 89.0 ],
                                     "text": "in 3 @comment \"Rate (Signal/Float) Hz 50 to 48000, 48000 = off -- default 8000\" @default 8000"
                                 }
                             },
@@ -270,15 +179,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        665.0,
-                                        20.0,
-                                        200.0,
-                                        49.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 626.0, 8.0, 92.0, 89.0 ],
                                     "text": "in 4 @comment \"Bits (Signal/Float) 1 to 24 -- default 6\" @default 6"
                                 }
                             },
@@ -287,19 +189,12 @@
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-5",
-                                    "linecount": 6,
+                                    "linecount": 3,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        880.0,
-                                        20.0,
-                                        200.0,
-                                        49.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 764.0, 20.0, 200.0, 49.0 ],
                                     "text": "in 5 @comment \"Auto-gain (Signal/Int) 0 off 1 on -- default 1\" @default 1"
                                 }
                             },
@@ -312,15 +207,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        20.0,
-                                        106.0,
-                                        200.0,
-                                        62.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 519.0, 195.0, 132.0, 89.0 ],
                                     "text": "in 6 @comment \"Low-pass (Signal/Float) Hz 200 to 20000 -- default 20000\" @default 20000"
                                 }
                             },
@@ -333,15 +221,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        235.0,
-                                        106.0,
-                                        200.0,
-                                        62.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 674.0, 195.0, 106.0, 89.0 ],
                                     "text": "in 7 @comment \"Dry/Wet (Signal/Float) % 0 to 100 -- default 100\" @default 100"
                                 }
                             },
@@ -350,19 +231,12 @@
                                     "fontname": "Arial",
                                     "fontsize": 12.0,
                                     "id": "obj-8",
-                                    "linecount": 6,
+                                    "linecount": 2,
                                     "maxclass": "newobj",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        450.0,
-                                        106.0,
-                                        200.0,
-                                        49.0
-                                    ],
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 823.0, 195.0, 200.0, 35.0 ],
                                     "text": "in 8 @comment \"On/Off (Signal/Int) 1 on 0 off -- default 1\" @default 1"
                                 }
                             },
@@ -376,16 +250,8 @@
                                     "maxclass": "codebox",
                                     "numinlets": 8,
                                     "numoutlets": 2,
-                                    "outlettype": [
-                                        "",
-                                        ""
-                                    ],
-                                    "patching_rect": [
-                                        20.0,
-                                        198.0,
-                                        760.0,
-                                        1250.0
-                                    ]
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 20.0, 682.0, 760.0, 1250.0 ]
                                 }
                             },
                             {
@@ -396,12 +262,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [
-                                        20.0,
-                                        1478.0,
-                                        200.0,
-                                        36.0
-                                    ],
+                                    "patching_rect": [ 20.0, 1962.0, 200.0, 22.0 ],
                                     "text": "out 1 @comment \"Left Out (Signal)\""
                                 }
                             },
@@ -413,12 +274,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [
-                                        580.0,
-                                        1478.0,
-                                        200.0,
-                                        36.0
-                                    ],
+                                    "patching_rect": [ 580.0, 1962.0, 207.0, 22.0 ],
                                     "text": "out 2 @comment \"Right Out (Signal)\""
                                 }
                             }
@@ -426,132 +282,72 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-1",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 0 ],
+                                    "midpoints": [ 29.5, 368.5, 29.5, 368.5 ],
+                                    "source": [ "obj-1", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-2",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        1
-                                    ]
+                                    "destination": [ "obj-20", 1 ],
+                                    "midpoints": [ 223.5, 115.05075073242188, 135.35714285714286, 115.05075073242188 ],
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-3",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        2
-                                    ]
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-4",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        3
-                                    ]
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-20", 1 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-5",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        4
-                                    ]
+                                    "destination": [ "obj-20", 2 ],
+                                    "midpoints": [ 459.5, 124.25881958007812, 241.21428571428572, 124.25881958007812 ],
+                                    "source": [ "obj-3", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-6",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        5
-                                    ]
+                                    "destination": [ "obj-20", 3 ],
+                                    "midpoints": [ 635.5, 134.8751983642578, 347.07142857142856, 134.8751983642578 ],
+                                    "source": [ "obj-4", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-7",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        6
-                                    ]
+                                    "destination": [ "obj-20", 4 ],
+                                    "midpoints": [ 773.5, 166.81039428710938, 452.92857142857144, 166.81039428710938 ],
+                                    "source": [ "obj-5", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-8",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-20",
-                                        7
-                                    ]
+                                    "destination": [ "obj-20", 5 ],
+                                    "source": [ "obj-6", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-20",
-                                        0
-                                    ],
-                                    "destination": [
-                                        "obj-21",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 6 ],
+                                    "source": [ "obj-7", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "source": [
-                                        "obj-20",
-                                        1
-                                    ],
-                                    "destination": [
-                                        "obj-22",
-                                        0
-                                    ]
+                                    "destination": [ "obj-20", 7 ],
+                                    "source": [ "obj-8", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [
-                        15.0,
-                        110.0,
-                        555.0,
-                        22.0
-                    ],
+                    "patching_rect": [ 15.0, 110.0, 555.0, 22.0 ],
                     "text": "gen~ @title br.crush.1.3"
                 }
             },
@@ -559,32 +355,22 @@
                 "box": {
                     "comment": "Left Out (Signal)",
                     "id": "obj-21",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        15.0,
-                        170.0,
-                        30.0,
-                        30.0
-                    ]
+                    "patching_rect": [ 15.0, 170.0, 30.0, 30.0 ]
                 }
             },
             {
                 "box": {
                     "comment": "Right Out (Signal)",
                     "id": "obj-22",
-                    "index": 2,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        90.0,
-                        170.0,
-                        30.0,
-                        30.0
-                    ]
+                    "patching_rect": [ 90.0, 170.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -596,12 +382,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        640.0,
-                        15.0,
-                        399.0,
-                        33.0
-                    ],
+                    "patching_rect": [ 640.0, 15.0, 399.0, 33.0 ],
                     "text": "br.crush.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/"
                 }
             },
@@ -614,12 +395,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [
-                        640.0,
-                        60.0,
-                        380.0,
-                        155.0
-                    ],
+                    "patching_rect": [ 640.0, 60.0, 380.0, 154.0 ],
                     "text": "br.crush: bit + sample-rate reduction, stereo. Rate holds each sample until the next one is taken (aliasing and grit); Bits rounds every sample to fewer levels (buzz and crunch). Bits is a float, so it morphs between depths. Every bit below 8 makes the crush sound louder, so Auto-gain cuts 3 dB per bit, landing before the crush gets louder and lifting after it gets quieter: the level never jumps. The Low-pass after the crush smooths it. Dry/Wet is linear, On/Off fades to dry. All DSP is in the gen~; every control fades, so nothing clicks. Defaults live in the gen~ (in N @default), so unconnected inlets need nothing. No State outlet here: whatever drives the core already knows the values. The .ui version reports its controls."
                 }
             }
@@ -627,124 +403,65 @@
         "lines": [
             {
                 "patchline": {
-                    "source": [
-                        "obj-1",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        0
-                    ]
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-1", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-2",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        1
-                    ]
+                    "destination": [ "obj-20", 1 ],
+                    "source": [ "obj-2", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-3",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        2
-                    ]
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-20", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-4",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        3
-                    ]
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-20", 1 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-5",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        4
-                    ]
+                    "destination": [ "obj-20", 2 ],
+                    "source": [ "obj-3", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-6",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        5
-                    ]
+                    "destination": [ "obj-20", 3 ],
+                    "source": [ "obj-4", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-7",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        6
-                    ]
+                    "destination": [ "obj-20", 4 ],
+                    "source": [ "obj-5", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-8",
-                        0
-                    ],
-                    "destination": [
-                        "obj-20",
-                        7
-                    ]
+                    "destination": [ "obj-20", 5 ],
+                    "source": [ "obj-6", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-20",
-                        0
-                    ],
-                    "destination": [
-                        "obj-21",
-                        0
-                    ]
+                    "destination": [ "obj-20", 6 ],
+                    "source": [ "obj-7", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "source": [
-                        "obj-20",
-                        1
-                    ],
-                    "destination": [
-                        "obj-22",
-                        0
-                    ]
+                    "destination": [ "obj-20", 7 ],
+                    "source": [ "obj-8", 0 ]
                 }
             }
-        ]
+        ],
+        "autosave": 0
     }
 }
