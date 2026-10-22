@@ -464,7 +464,7 @@
                                                 134.0,
                                                 87.0,
                                                 1300.0,
-                                                884.0
+                                                1564.0
                                             ],
                                             "boxes": [
                                                 {
@@ -480,10 +480,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            29.0,
                                                             20.0,
-                                                            100.0,
-                                                            89.0
+                                                            20.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 1 @comment \"Left In (Signal)\""
                                                     }
@@ -501,10 +501,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            91.0,
-                                                            130.0,
-                                                            100.0,
-                                                            89.0
+                                                            235.0,
+                                                            20.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 2 @comment \"Right In (Signal)\""
                                                     }
@@ -522,10 +522,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            153.0,
-                                                            240.0,
-                                                            100.0,
-                                                            89.0
+                                                            450.0,
+                                                            20.0,
+                                                            200.0,
+                                                            76.0
                                                         ],
                                                         "text": "in 3 @comment \"Rate (Signal/Float) Hz 50 to 48000, 48000 = off -- default 8000\" @default 8000"
                                                     }
@@ -543,10 +543,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            215.0,
-                                                            350.0,
-                                                            100.0,
-                                                            89.0
+                                                            665.0,
+                                                            20.0,
+                                                            200.0,
+                                                            49.0
                                                         ],
                                                         "text": "in 4 @comment \"Bits (Signal/Float) 1 to 24 -- default 6\" @default 6"
                                                     }
@@ -564,10 +564,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            277.0,
+                                                            880.0,
                                                             20.0,
-                                                            100.0,
-                                                            89.0
+                                                            200.0,
+                                                            49.0
                                                         ],
                                                         "text": "in 5 @comment \"Auto-gain (Signal/Int) 0 off 1 on -- default 1\" @default 1"
                                                     }
@@ -585,10 +585,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            339.0,
-                                                            130.0,
-                                                            100.0,
-                                                            89.0
+                                                            20.0,
+                                                            106.0,
+                                                            200.0,
+                                                            62.0
                                                         ],
                                                         "text": "in 6 @comment \"Low-pass (Signal/Float) Hz 200 to 20000 -- default 20000\" @default 20000"
                                                     }
@@ -606,10 +606,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            401.0,
-                                                            240.0,
-                                                            100.0,
-                                                            89.0
+                                                            235.0,
+                                                            106.0,
+                                                            200.0,
+                                                            62.0
                                                         ],
                                                         "text": "in 7 @comment \"Dry/Wet (Signal/Float) % 0 to 100 -- default 100\" @default 100"
                                                     }
@@ -627,10 +627,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            463.0,
-                                                            350.0,
-                                                            100.0,
-                                                            89.0
+                                                            450.0,
+                                                            106.0,
+                                                            200.0,
+                                                            49.0
                                                         ],
                                                         "text": "in 8 @comment \"On/Off (Signal/Int) 1 on 0 off -- default 1\" @default 1"
                                                     }
@@ -650,8 +650,8 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            29.0,
-                                                            556.0,
+                                                            20.0,
+                                                            198.0,
                                                             760.0,
                                                             1250.0
                                                         ]
@@ -666,10 +666,10 @@
                                                         "numinlets": 1,
                                                         "numoutlets": 0,
                                                         "patching_rect": [
-                                                            29.0,
-                                                            1830.0,
+                                                            20.0,
+                                                            1478.0,
                                                             200.0,
-                                                            22.0
+                                                            36.0
                                                         ],
                                                         "text": "out 1 @comment \"Left Out (Signal)\""
                                                     }
@@ -683,10 +683,10 @@
                                                         "numinlets": 1,
                                                         "numoutlets": 0,
                                                         "patching_rect": [
-                                                            770.0,
-                                                            1830.0,
-                                                            207.0,
-                                                            22.0
+                                                            580.0,
+                                                            1478.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "out 2 @comment \"Right Out (Signal)\""
                                                     }
