@@ -20,6 +20,8 @@ These files were created with Max 9, or RNBO.
 [Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.crush/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.crush/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 
+**Max for Live note:** if Live's audio engine is off (no audio output device chosen, an orange bar at the bottom of Live), the device opens with its controls at 0 or their lowest value. Turn audio on and they jump to their default values by themselves.
+
 ## <a name="About"></a>About
 
 Bit + sample-rate reduction, stereo. Rate holds each sample until the next one is taken, for aliasing and grit; Bits rounds every sample to fewer levels, for buzz and crunch. Bits is a float, so turning it morphs smoothly between depths instead of stepping. Auto-gain keeps the level steady as Bits goes down, and a low-pass after the crush smooths it. Every control fades, so nothing clicks. Works at any sample rate.
